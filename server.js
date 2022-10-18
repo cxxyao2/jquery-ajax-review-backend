@@ -18,6 +18,13 @@ app.get('/error', function (req, res) {
   res.status(400).send({ message: 'Uncaught Error' })
 })
 
+app.get('/ajax', function (req, res) {
+  const callback = req.query.jsoncallback
+  res
+    .status(200)
+    .send(callback + '(' + JSON.stringify({ name: 'Legend' }) + ')')
+})
+
 app.post('/books', function (req, res) {
   console.log('req body', req.body)
   res.send({ data: [...bookArray, req.body] })
