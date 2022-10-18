@@ -1,0 +1,22 @@
+{
+  "name": "jquery_server",
+  "version": "1.0.0",
+  "description": "jquery ajax",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "ajax"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
